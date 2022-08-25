@@ -1,6 +1,7 @@
 import './App.css';
 import ContadorHooks from './components/ContadorHooks';
 import ScrollHooks from './components/ScrollHooks';
+import RelogHooks from './components/RelogHooks';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <hr/>
         <ContadorHooks />
         <hr/>
-        
+        <RelogHooks />
         <hr/>      
         <ScrollHooks />
         <hr/>
