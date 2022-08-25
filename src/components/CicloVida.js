@@ -3,7 +3,6 @@ import React, {Component} from "react";
 export default class CicloVida extends Component {
   constructor(props) {
     super(props);
-    console.log(0,"el componente se inicializa");
     
     this.state = {
       hora: new Date().toLocaleTimeString()
@@ -19,7 +18,6 @@ export default class CicloVida extends Component {
     console.log(prevProps, prevState);
   }
   componentWillUnmount() {
-    console.log(3,"el componente se desmonta");
     clearInterval(this.temp);
   }
 
@@ -38,7 +36,6 @@ export default class CicloVida extends Component {
     clearInterval(this.temp);
   }
 render() {
-  console.log(4,"el componente se rederiza");
   return (
     <div>
       <h2>Ciclo de vida</h2>
