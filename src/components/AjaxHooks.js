@@ -26,9 +26,9 @@ export default function ApiHooks(){
   
   useEffect(() => {
     const getPokemons = async (url) => {      
-      let res = await fetch(url);
-      let json = await res.json();
-      json.results.forEach(async (el) => {
+      let answer = await fetch(url);
+      let data = await answer.json();
+      data.results.forEach(async (el) => {
         let res = await fetch(el.url);
         let json = await res.json();
         let pokemon = {
@@ -45,8 +45,8 @@ return(
     <>    
       <h2>Peticiones asincronas Usando Hooks</h2>
       {pokemons.length === 0 ? <p>Cargando...</p> : (
-        pokemons.map((el) => (
-          <figure>
+        pokemons.map(el => (
+          <figure key={el.id}>
           <img src={el.avatar} alt={el.name} />
           <p>{el.name}</p>
         </figure>

@@ -2,7 +2,7 @@ import './App.css';
 import ContadorHooks from './components/ContadorHooks';
 import ScrollHooks from './components/ScrollHooks';
 import RelogHooks from './components/RelogHooks';
-import ApiHooks from './components/AjaxHooks';
+import HooksPersonalizados from './components/HooksPersonalizados';
 
 function App() {
   return (
@@ -13,8 +13,8 @@ function App() {
         <ContadorHooks />
         <hr/>
         <RelogHooks />
-        <hr/>    
-        <ApiHooks />
+        <hr/>
+        <HooksPersonalizados />
         <hr/>  
         <ScrollHooks />
         <hr/>
