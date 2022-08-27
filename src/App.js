@@ -5,13 +5,16 @@ import RelogHooks from './components/RelogHooks';
 import HooksPersonalizados from './components/HooksPersonalizados';
 import Referencias from './components/Referencias';
 import Formularios from './components/Formularios';
+import Estilos from './components/Estilos';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">          
         <section>
-         <Formularios />
+        <Estilos />
+        <hr/>
+        <Formularios />
         <hr/>
         <Referencias />
         <hr/>
